@@ -609,9 +609,11 @@ public:
   bool
   isCanonical(const FaceUri& faceUri) const override
   {
-    if (!faceUri.getPath().empty()) {
+    /* do not check uri-path
+	if (!faceUri.getPath().empty()) {
       return false;
     }
+	*/
     return true;
   }
 
